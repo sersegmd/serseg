@@ -1,0 +1,13 @@
+# A small example of the currently supported subset.
+let name = "SERSEG"
+show name
+let mut total: int = 0
+repeat i from 0 to 5 {
+    total = total + i
+}
+when total == 10 {
+    show "Sum is correct"
+} otherwise {
+    show "Unexpected sum"
+}
+show total

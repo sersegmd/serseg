@@ -1,0 +1,4 @@
+use helper
+task square(n: int) -> int {
+    give multiply(n, n)
+}

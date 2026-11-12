@@ -1,0 +1,6 @@
+{
+  "Show": { "prefix": "show", "body": ["show ${1:\"Hello!\"}"], "description": "Print a value" },
+  "Task": { "prefix": "task", "body": ["task ${1:name}(${2:value}: ${3:int}) -> ${4:int} {", "    give ${5:value}", "}"], "description": "Declare a task" },
+  "Condition": { "prefix": "when", "body": ["when ${1:condition} {", "    ${2:show \"yes\"}", "} otherwise {", "    ${3:show \"no\"}", "}"], "description": "Conditional" },
+  "Range loop": { "prefix": "repeat", "body": ["repeat ${1:i} from ${2:0} to ${3:10} {", "    ${4:show i}", "}"], "description": "End-exclusive range loop" }
+}

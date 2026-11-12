@@ -1,0 +1,10 @@
+task factorial(n: int) -> int {
+    when n <= 1 {
+        give 1
+    } otherwise {
+        give n * factorial(n - 1)
+    }
+}
+assert factorial(0) == 1
+assert factorial(6) == 720
+assert (5 & 3) == 1

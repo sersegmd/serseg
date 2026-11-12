@@ -1,0 +1,9 @@
+let answer = trim(input("Enter an integer: "))
+when is_int(answer) {
+    let number = to_int(answer)
+    show "Next number: " + str(number + 1)
+} otherwise when is_float(answer) {
+    show "That is a decimal number, not an integer."
+} otherwise {
+    show "That is not a valid number."
+}

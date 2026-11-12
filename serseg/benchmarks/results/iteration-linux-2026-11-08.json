@@ -1,0 +1,43 @@
+{
+  "timestamp_utc": "2026-11-08T22:37:36.967632+00:00",
+  "workload": "30,000,000 int_array visits with checked each loop",
+  "source_sha256": "62d2894c41d27e81f4c97f8eeb2ba93e3f7bffecc848beed82132834e836faae",
+  "compiler_sha256": "557cb835ad845b553566e3efe21f9c3282b8918d48f460f3ac6be93ee0533946",
+  "compiler_version": "SERSEG 0.2.0\nCompiler: SERSEG bootstrap 0.2.0\nHost target: x86_64-linux-gnu",
+  "gcc_version": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)",
+  "system": "Linux-6.18.56-x86_64-with-glibc2.34",
+  "machine": "x86_64",
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.90GHz",
+  "samples_per_level": 7,
+  "method": "one build per level; one untimed warmup; alternate first level per repetition; elapsed wall time includes process startup",
+  "results": {
+    "-O0": {
+      "build_seconds_single_run": 0.04384675999997967,
+      "binary_size_bytes": 18008,
+      "execution_seconds": [
+        0.13420089600001006,
+        0.17877793799999608,
+        0.12733224799998766,
+        0.13415693799998962,
+        0.1393739369999878,
+        0.13579066299999454,
+        0.13458960799999886
+      ],
+      "execution_median_seconds": 0.13458960799999886
+    },
+    "-O1": {
+      "build_seconds_single_run": 0.061624660999996195,
+      "binary_size_bytes": 18008,
+      "execution_seconds": [
+        0.09271021099999643,
+        0.09327832899998612,
+        0.08570971999998278,
+        0.08751187000001437,
+        0.08988308899998287,
+        0.09203535200001056,
+        0.0905249470000058
+      ],
+      "execution_median_seconds": 0.0905249470000058
+    }
+  }
+}

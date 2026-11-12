@@ -1,0 +1,58 @@
+{
+  "name": "serseg-language",
+  "displayName": "SERSEG Language",
+  "description": "Syntax, snippets, diagnostics and build/run commands for SERSEG",
+  "version": "0.1.0",
+  "publisher": "serseg",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "serseg",
+        "aliases": [
+          "SERSEG",
+          "serseg"
+        ],
+        "extensions": [
+          ".ser"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "serseg",
+        "scopeName": "source.serseg",
+        "path": "./syntaxes/serseg.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "serseg",
+        "path": "./snippets/serseg.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "serseg.build",
+        "title": "SERSEG: Build current file"
+      },
+      {
+        "command": "serseg.run",
+        "title": "SERSEG: Run current file"
+      }
+    ]
+  },
+  "main": "./extension.js",
+  "activationEvents": [
+    "onLanguage:serseg",
+    "onCommand:serseg.build",
+    "onCommand:serseg.run"
+  ]
+}

@@ -1,0 +1,10 @@
+var numbers: int_array = [10, 20]
+let shared = numbers
+push numbers, 30
+numbers[0] = 5
+each number in shared {
+    show number
+}
+let greeting = "Hello, " + "SERSEG!"
+show greeting
+show greeting == "Hello, SERSEG!"

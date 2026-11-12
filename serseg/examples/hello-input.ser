@@ -1,0 +1,3 @@
+show "What is your name?"
+let name = input()
+show "Hello, " + name + "!"

@@ -1,0 +1,4 @@
+SERSEG Windows development bundle: cross-built, NOT TESTED ON WINDOWS
+Source commit: 4afe3ddb0aae7fa07ac27775391b3f1adf78b6da
+This is not a SERSEG 1.0 release or validated installer. The compiler was cross-built on Linux with MinGW-w64 GCC 15.2.1 for Windows x86-64. It has not run on Windows. The compiler requires a compatible Windows GCC on PATH, which is not included. Direct DLL imports are KERNEL32.dll, msvcrt.dll and SHELL32.dll; transitive dependencies are not validated. PowerShell installation and VS Code behavior are untested. See serseg/docs/WINDOWS_AR.md and serseg/docs/STATUS.md.
+No SERSEG project license has been selected; obtain permission before redistribution. Third-party license texts are included.

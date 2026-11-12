@@ -1,0 +1,12 @@
+# 30,000,000 checked integer-array element visits.
+var values = []
+repeat i from 0 to 1000 {
+    push values, i
+}
+var total = 0
+repeat pass from 0 to 30000 {
+    each item in values {
+        total = total + item
+    }
+}
+show total

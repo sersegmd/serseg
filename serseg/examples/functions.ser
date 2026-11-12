@@ -1,0 +1,19 @@
+task factorial(n: int) -> int {
+    when n <= 1 {
+        give 1
+    } otherwise {
+        give n * factorial(n - 1)
+    }
+}
+
+var total = 0
+repeat i from 1 to 8 {
+    when i == 4 {
+        continue
+    }
+    when i == 7 {
+        break
+    }
+    total = total + factorial(i)
+}
+show total

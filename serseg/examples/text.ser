@@ -1,0 +1,5 @@
+let name = input("What is your name? ")
+let age = to_int(input("How old are you? "))
+show "Hello, " + name + "!"
+show "Your age: " + str(age)
+show "Name length in bytes: " + str(len(name))

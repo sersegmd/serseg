@@ -1,0 +1,23 @@
+# Arithmetic helpers for signed integers. Overflow follows integer arithmetic rules.
+task min(a: int, b: int) -> int {
+    when a < b { give a }
+    give b
+}
+task max(a: int, b: int) -> int {
+    when a > b { give a }
+    give b
+}
+task clamp(value: int, low: int, high: int) -> int {
+    assert low <= high
+    when value < low { give low }
+    when value > high { give high }
+    give value
+}
+task min_float(a: float, b: float) -> float {
+    when a < b { give a }
+    give b
+}
+task max_float(a: float, b: float) -> float {
+    when a > b { give a }
+    give b
+}
